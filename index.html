@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    
+    <title>Centro de Adopción de michis</title>
+</head>
+<body>
+    <div class="contenier">
+
+        <header class="header">
+            <h1 id="title">Adoptá tu michi</h1>
+            <p id="description">Completa la solicitud de adopción de tu proximo peludito!</p>
+        </header>
+
+        <form action="" id="survey-form">
+            
+            <fieldset>
+                <legend>Información personal y de contacto: </legend>
+                <div class="form-group">
+                    <label for="name" id="name-label">Ingrese nombre y apellido: </label>
+                    <input type="text" class="form-control" id="name" placeholder="Juan Perez" required>
+                </div>
+                <div class="for-group">
+                    <label for="number" id="number-label">Ingrese su edad: </label>
+                    <input type="number" class="form-control" min="20" max="80" id="age" placeholder="20" required>
+                </div>
+                <div class="for-group">
+                    <label for="email" id="email-label" >Ingrese su email: </label>
+                    <input type="email" class="form-control" id="email" placeholder="juanperez@example.com" required>
+                </div>
+                <div class="for-group">
+                    <label for="number" id="number-label">Ingrese su telefono: </label>
+                    <input type="number" class="form-control" min="15000000" max="15999999" id="number" placeholder="15342312" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="inline">
+                <legend>Tiene usted forma de solventar sus gastos y los de una mascota?</legend>
+                <label for="si"></label><input type="radio" name="trabajo" value="si" id="si" class="inline"></input>Tengo trabajo</label>
+                <label for="no"></label><input type="radio" name="trabajo" value="no" id="no" class="inline"></input>No tengo trabajo</label>
+                <label for="casi"></label><input type="radio" name="trabajo" value="casi" id="casi" class="inline"></input>Tengo trabajo pero no llegaria a cubrir inprevistos</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Tuvo o tiene michis de mascota? </legend>
+                    <select name="" id="dropdown">
+                        <option value="0">Elija una opcion:</option>
+                        <option value="1">Si tuve</option>
+                        <option value="2">No tuve</option>
+                        <option value="3">Tengo 1 o mas michis a mi cuidado</option>
+                    </select>
+            </fieldset>     
+            
+            <fieldset>
+                <legend>Que tipo de gatos estaria dispuesto a adoptar?</legend>
+                <label for="45-dias"><input type="checkbox" name="michi-type" value="45-dias" id="45-dias" class="inline"> michis de 45 dias</label>
+                <label for="60-dias"><input type="checkbox" name="michi-type" value="60-dias" id="60-dias" class="inline"> michis con +2 meses</label>
+                <label for="32-meses"><input type="checkbox" name="michi-type" value="32-meses" id="32-meses" class="inline"> michis con alguna discapacidad</label>
+                <label for="24-meses"><input type="checkbox" name="michi-type" value="24-meses" id="24-meses" class="inline"> michis en recuperacion</label>
+                <label for="michi-senior"><input type="checkbox" name="michi-type" value="michi-senior" id="michi-senior" class="inline"> michis +7 años</label>
+            </fieldset>
+            
+           <fieldset>
+            <legend>¿Tiene alguna comentario o consulta?</legend>
+            <textarea name="consulta" id="consulta"></textarea>
+            <button id="submit" type="submit"> Envia tu solicitud </button>
+           </fieldset>
+            
+        </form>
+
+    </div>
+
+</body>
+
+</html>
